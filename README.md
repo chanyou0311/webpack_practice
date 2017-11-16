@@ -40,7 +40,8 @@ index.htmlを開いてみるとmain.jsが実行される。すごいね。
 ### 自作モジュール
 jsファイル分割してモジュールとして読み込める。
 
-```print.js
+```js
+# print.js
 module.exports = function() {
   ...
 };
@@ -52,4 +53,3 @@ module.exports = function() {
 ```
 $ node_modules/webpack/bin/webpack.js main.js bundle.js
 ```
-
