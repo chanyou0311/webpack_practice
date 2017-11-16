@@ -65,9 +65,20 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+document.write("<p>Hello webpack</p>");
+var print = __webpack_require__(1);
+print("Hello print.js");
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
-document.write("Hello webpack");
+module.exports = function(msg) {
+    document.write("<p>[print] " + msg + "</p>");
+};
 
 
 /***/ })

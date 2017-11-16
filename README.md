@@ -35,3 +35,21 @@ $ node_modules/webpack/bin/webpack.js main.js bundle.js
 
 でビルドできる。
 index.htmlを開いてみるとmain.jsが実行される。すごいね。
+
+## モジュールの利用
+### 自作モジュール
+jsファイル分割してモジュールとして読み込める。
+
+```print.js
+module.exports = function() {
+  ...
+};
+```
+
+でprintモジュールを作成できる。
+ビルド方法は変わらず以下のように行う。
+
+```
+$ node_modules/webpack/bin/webpack.js main.js bundle.js
+```
+
